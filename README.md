@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>演習7-1(おみくじ) 学籍番号:M19W7128</title>
+<title>占卜</title>
 </head>
 <body>
 	<h3>おみくじ</h3>
