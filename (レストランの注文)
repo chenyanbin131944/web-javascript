@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+<meta charset="utf-8">
+<title>(レストランの注文)</title>
+</head>
+<body>
+	<h2>レストランの注文</h2>
+	<p id="menu">メニュー</p>
+	  <button onclick="order()">注文</button>
+         <button onclick="serve()">delete</button>
+         待ち：<span id="result">?</span>
+ <Script>let menu=["天ぶら","肉じゃが","親子丼","天丼","豚定食"];
+let orders=[];
+document.querySelector("#menu").textContent=menu.join(",");
+function order(){
+    let result=document.querySelector("#result");
+    let index=parseInt(Math.random()*menu.length);
+    orders.push(menu[index]);
+    result.textContent=orders.join(",");
+
+
+
+}
+function serve(){
+    let result =document.querySelector("#result");
+    orders.shift();
+    result.textContent=orders.join(",");
+
+
+}
+</script>
+
+</body>
+</html>
